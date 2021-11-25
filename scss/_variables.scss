@@ -1,0 +1,19 @@
+//Colors
+
+$Very-dark-blue: hsl(233, 47%, 7%);
+$Dark-desaturated-blue: hsl(244, 38%, 16%);
+$Soft-violet: hsl(277, 64%, 61%);
+
+$White: hsl(0, 0%, 100%);
+$Slightly-transparent-white-one: hsla(0, 0%, 100%, 0.75);
+$Slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+
+//UI config
+
+$ui-color-background-body: $Very-dark-blue;
+$ui-color-background-card: $Dark-desaturated-blue;
+$ui-color-background-accent: $Soft-violet;
+
+$ui-color-text-heading-main: $White;
+$ui-color-text-paragraph-main: $Slightly-transparent-white-one;
+$ui-color-text-paragraph-stats: $Slightly-transparent-white-two;

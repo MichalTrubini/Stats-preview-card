@@ -1,0 +1,128 @@
+@import 'init', 'variables';
+
+body {
+    background-color: $ui-color-background-body;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.main {
+    margin: 6rem auto;
+    max-width: 34rem;
+}
+
+.content {
+    background-color: $ui-color-background-card;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    width:100%;
+
+    &__img {
+        height:25rem;
+        position:relative;
+        
+        &--overlay {
+            background:$ui-color-background-accent;
+            border-radius: 1rem 1rem 0 0;
+            height:25rem;
+            opacity:0.5;
+            position: absolute;
+            width:100%;
+        }
+    }
+
+    &__image {
+        border-radius: 1rem 1rem 0 0;
+        left:0;
+        position: absolute;
+        
+    }
+
+    &__text {
+        padding:5rem 3rem;
+        top:50%;
+    }
+
+    &__heading {
+        color:$ui-color-text-heading-main;
+        font-size: 3rem;
+
+
+        &--accent {
+            color:$ui-color-background-accent;
+        }
+    }
+
+    &__paragraph {
+        color:$ui-color-text-paragraph-main;
+        line-height:2.4rem;
+        margin-top:3rem;
+    }
+}
+
+.stats {
+    display:flex;
+    flex-direction:column;
+
+    &__heading {
+        color: $ui-color-text-heading-main;
+        margin-top:2rem;
+    }
+
+    &__paragraph {
+        color:$ui-color-text-paragraph-stats;
+        font-size: 1rem;
+        margin-top: 0.7rem;
+        text-transform: uppercase;
+    }
+}
+
+.attribution {
+    color:$White;
+    margin-top:1rem;
+}
+
+@media (min-width:1000px) {
+
+    .main {
+        max-width:110rem;
+    }
+
+    .content {
+        flex-direction:row-reverse;
+        height:40.4rem;
+        text-align: left;
+        
+        &__heading {
+            font-size: 3.5rem;
+        }
+
+        &__img {
+            width:50%;
+
+            &--overlay {
+                border-radius: 0rem 1rem 1rem 0;
+                height:40.4rem;
+            }
+        }
+
+        &__image {
+            border-radius: 0rem 1rem 1rem 0;
+        }
+
+        &__text {
+            padding: 6rem 11rem 3rem 6rem;
+            width:50%;         
+        }
+
+    }
+    .stats {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+}
